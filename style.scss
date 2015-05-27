@@ -38,6 +38,8 @@ $blue_sky: #6cf;
 // --------------------------------------------------
 // @section typography
 // --------------------------------------------------
+
+// default font set
 body {
   color: $gray;
   font-family: "Open Sans", sans-serif;
@@ -47,7 +49,21 @@ body {
 p { font-size: 1.125em; }
 
 h2 { font-weight: 400; }
+// --------------------------------------------------
+
+
+// --------------------------------------------------
+// @section navigation
+// --------------------------------------------------
 
 // links in main header
-header[role="banner"] a { font-size: .875em; }
+header[role="banner"] a { 
+  font-size: .875em; 
+  text-decoration: none;
+
+  &:hover {
+    color: $blue_sky;
+    transition: color .5s;
+  }
+}
 // --------------------------------------------------

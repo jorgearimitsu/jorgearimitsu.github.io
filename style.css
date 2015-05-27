@@ -17,4 +17,8 @@ h2 {
   font-weight: 400; }
 
 header[role="banner"] a {
-  font-size: .875em; }
+  font-size: .875em;
+  text-decoration: none; }
+  header[role="banner"] a:hover {
+    color: #6cf;
+    transition: color .5s; }
