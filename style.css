@@ -4,3 +4,17 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
+
+body {
+  color: #666;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
+
+p {
+  font-size: 1.125em; }
+
+h2 {
+  font-weight: 400; }
+
+header[role="banner"] a {
+  font-size: .875em; }
