@@ -16,9 +16,15 @@ p {
 h2 {
   font-weight: 400; }
 
-header[role="banner"] a {
-  font-size: .875em;
-  text-decoration: none; }
-  header[role="banner"] a:hover {
+a {
+  color: #6cf; }
+  a:active {
+    color: inherit; }
+  a:hover {
     color: #6cf;
     transition: color .5s; }
+
+header[role="banner"] a {
+  color: #666;
+  font-size: .875em;
+  text-decoration: none; }
