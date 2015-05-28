@@ -24,6 +24,9 @@ a {
     color: #6cf;
     transition: color .5s; }
 
+header[role="banner"] h1 img {
+  max-width: 177px;
+  max-height: 32px; }
 header[role="banner"] h1 span {
   display: none; }
 header[role="banner"] a {

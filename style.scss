@@ -77,6 +77,11 @@ a {
 // --------------------------------------------------
 header[role="banner"] {
   h1 {
+    img {
+      max-width: 177px;
+      max-height: 32px;
+    }
+    // hiding logo text
     span { display: none; }
   }
 
@@ -88,7 +93,8 @@ header[role="banner"] {
 
   li a {
     position: relative;
-
+    
+    //hiding links texts
     span {
       position: absolute;
       left: -9999em;
