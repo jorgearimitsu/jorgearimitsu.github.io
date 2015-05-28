@@ -33,8 +33,6 @@ header[role="banner"] h1 span {
 .header-links a {
   font-size: .875em;
   text-decoration: none; }
-  .header-links a:not(:last-of-type) {
-    margin-right: 20px; }
   .header-links a i {
     font-size: 1.2857142857em;
     margin-right: 10px; }
@@ -48,3 +46,7 @@ header[role="banner"] h1 span {
     .social-links li a span {
       position: absolute;
       left: -9999em; }
+
+.header-links a:not(:last-of-type),
+.social-links li:not(:last-of-type) {
+  margin-right: 20px; }

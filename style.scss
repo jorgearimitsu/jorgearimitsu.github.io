@@ -89,8 +89,6 @@ header[role="banner"] {
 .header-links a {
   font-size: .875em; // 14px / 16px
   text-decoration: none;
-
-  &:not(:last-of-type) { margin-right: 20px; }
   
   i {
     font-size: 1.2857142857em; // 18px / 14px
@@ -112,5 +110,10 @@ header[role="banner"] {
       left: -9999em;
     }
   }
+}
+
+.header-links a,
+.social-links li {
+  &:not(:last-of-type) { margin-right: 20px; }
 }
 // --------------------------------------------------
