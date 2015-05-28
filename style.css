@@ -17,7 +17,7 @@ h2 {
   font-weight: 400; }
 
 a {
-  color: #6cf; }
+  color: #666; }
   a:active {
     color: inherit; }
   a:hover {
@@ -29,14 +29,22 @@ header[role="banner"] h1 img {
   max-height: 32px; }
 header[role="banner"] h1 span {
   display: none; }
-header[role="banner"] a {
-  color: #666;
+
+.header-links a {
   font-size: .875em;
   text-decoration: none; }
-header[role="banner"] li {
+  .header-links a:not(:last-of-type) {
+    margin-right: 20px; }
+  .header-links a i {
+    font-size: 1.2857142857em;
+    margin-right: 10px; }
+
+.social-links li {
   display: inline-block; }
-  header[role="banner"] li a {
+  .social-links li a {
     position: relative; }
-    header[role="banner"] li a span {
+    .social-links li a i {
+      font-size: 1.7142857143em; }
+    .social-links li a span {
       position: absolute;
       left: -9999em; }

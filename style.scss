@@ -60,7 +60,7 @@ h2 { font-weight: 400; }
 // @section navigation
 // --------------------------------------------------
 a {
-  color: $blue_sky;
+  color: $gray;
 
   &:active { color: inherit; }
 
@@ -84,24 +84,32 @@ header[role="banner"] {
     // hiding logo text
     span { display: none; }
   }
+}
+
+.header-links a {
+  font-size: .875em; // 14px / 16px
+  text-decoration: none;
+
+  &:not(:last-of-type) { margin-right: 20px; }
+  
+  i {
+    font-size: 1.2857142857em; // 18px / 14px
+    margin-right: 10px;
+  }
+}
+
+.social-links li {
+  display: inline-block;
 
   a {
-    color: $gray;
-    font-size: .875em;
-    text-decoration: none;
-  }
+    position: relative;
 
-  li {
-    display: inline-block;
+  i { font-size: 1.7142857143em; } // 24px / 14px 
 
-    a {
-      position: relative;
-
-      //hiding links texts
-      span {
-        position: absolute;
-        left: -9999em;
-      }
+    //hiding links texts
+    span {
+      position: absolute;
+      left: -9999em;
     }
   }
 }
