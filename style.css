@@ -33,8 +33,10 @@ header[role="banner"] a {
   color: #666;
   font-size: .875em;
   text-decoration: none; }
-header[role="banner"] li a {
-  position: relative; }
-  header[role="banner"] li a span {
-    position: absolute;
-    left: -9999em; }
+header[role="banner"] li {
+  display: inline-block; }
+  header[role="banner"] li a {
+    position: relative; }
+    header[role="banner"] li a span {
+      position: absolute;
+      left: -9999em; }

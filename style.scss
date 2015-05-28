@@ -91,13 +91,17 @@ header[role="banner"] {
     text-decoration: none;
   }
 
-  li a {
-    position: relative;
-    
-    //hiding links texts
-    span {
-      position: absolute;
-      left: -9999em;
+  li {
+    display: inline-block;
+
+    a {
+      position: relative;
+
+      //hiding links texts
+      span {
+        position: absolute;
+        left: -9999em;
+      }
     }
   }
 }
