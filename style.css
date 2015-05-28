@@ -24,28 +24,36 @@ a {
     color: #6cf;
     transition: color .5s; }
 
-header[role="banner"] h1 img {
-  max-width: 177px;
-  max-height: 32px; }
-header[role="banner"] h1 span {
-  display: none; }
+header[role="banner"] {
+  padding: 20px 0; }
+  header[role="banner"] h1 img {
+    max-width: 177px;
+    max-height: 32px;
+    width: 100%; }
+  header[role="banner"] h1 span {
+    display: none; }
 
-.header-links a {
-  font-size: .875em;
-  text-decoration: none; }
-  .header-links a i {
-    font-size: 1.2857142857em;
-    margin-right: 10px; }
+.header-links {
+  margin-bottom: 20px;
+  text-align: center; }
+  .header-links a {
+    font-size: .875em;
+    text-decoration: none; }
+    .header-links a i {
+      font-size: 1.2857142857em;
+      margin-right: 10px; }
 
-.social-links li {
-  display: inline-block; }
-  .social-links li a {
-    position: relative; }
-    .social-links li a i {
-      font-size: 1.7142857143em; }
-    .social-links li a span {
-      position: absolute;
-      left: -9999em; }
+.social-links {
+  float: right; }
+  .social-links li {
+    display: inline-block; }
+    .social-links li a {
+      position: relative; }
+      .social-links li a i {
+        font-size: 1.7142857143em; }
+      .social-links li a span {
+        position: absolute;
+        left: -9999em; }
 
 .header-links a:not(:last-of-type),
 .social-links li:not(:last-of-type) {

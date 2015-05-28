@@ -76,38 +76,51 @@ a {
 // @section header
 // --------------------------------------------------
 header[role="banner"] {
+  padding: 20px 0;
+
   h1 {
     img {
       max-width: 177px;
       max-height: 32px;
+      width: 100%;
     }
+    
     // hiding logo text
     span { display: none; }
   }
 }
 
-.header-links a {
-  font-size: .875em; // 14px / 16px
-  text-decoration: none;
-  
-  i {
-    font-size: 1.2857142857em; // 18px / 14px
-    margin-right: 10px;
+.header-links {
+  margin-bottom: 20px;
+  text-align: center;
+
+  a {
+    font-size: .875em; // 14px / 16px
+    text-decoration: none;
+    
+    i {
+      font-size: 1.2857142857em; // 18px / 14px
+      margin-right: 10px;
+    }
   }
 }
 
-.social-links li {
-  display: inline-block;
+.social-links {
+  float: right;
 
-  a {
-    position: relative;
+  li {
+    display: inline-block;
 
-  i { font-size: 1.7142857143em; } // 24px / 14px 
+    a {
+      position: relative;
 
-    //hiding links texts
-    span {
-      position: absolute;
-      left: -9999em;
+    i { font-size: 1.7142857143em; } // 24px / 14px 
+
+      //hiding links texts
+      span {
+        position: absolute;
+        left: -9999em;
+      }
     }
   }
 }
