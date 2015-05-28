@@ -76,10 +76,23 @@ a {
 // @section header
 // --------------------------------------------------
 header[role="banner"] {
+  h1 {
+    span { display: none; }
+  }
+
   a {
     color: $gray;
     font-size: .875em;
     text-decoration: none;
+  }
+
+  li a {
+    position: relative;
+
+    span {
+      position: absolute;
+      left: -9999em;
+    }
   }
 }
 // --------------------------------------------------
