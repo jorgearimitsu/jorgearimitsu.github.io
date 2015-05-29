@@ -37,6 +37,9 @@ ul {
   width: 100%; }
 .logo span {
   display: none; }
+@media screen and (max-width: 767px) {
+  .logo {
+    margin-bottom: 20px; } }
 
 .nav,
 .nav li {

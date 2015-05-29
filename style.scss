@@ -139,6 +139,10 @@ ul { list-style-type: none; }
 
   //hiding text
   span { display: none; }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
 }
 // ---------- section end ----------
 
