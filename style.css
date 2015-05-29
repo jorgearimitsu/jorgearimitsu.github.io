@@ -59,15 +59,15 @@ ul {
     transition-property: color, border-color;
     transition-duration: 1s; }
 
-.divisor {
-  border-color: #666; }
+@media screen and (min-width: 768px) {
+  .divisor {
+    border-color: #666; }
 
-.divisor-left {
-  border-left-width: 2px;
-  border-left-style: solid;
-  margin-left: 20px;
-  padding-left: 20px; }
-
+  .divisor-left {
+    border-left-width: 2px;
+    border-left-style: solid;
+    margin-left: 20px;
+    padding-left: 20px; } }
 .section-heading {
   line-height: 1; }
   .section-heading hr {
