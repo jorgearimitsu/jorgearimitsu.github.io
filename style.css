@@ -102,3 +102,6 @@ ul {
   max-height: 217px;
   max-width: 217px;
   width: 100%; }
+
+header[role="banner"] {
+  padding: 20px 0; }
