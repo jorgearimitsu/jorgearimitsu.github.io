@@ -28,6 +28,13 @@ a {
 ul {
   list-style-type: none; }
 
+.logo img {
+  max-height: 32px;
+  max-width: 220px;
+  width: 100%; }
+.logo span {
+  display: none; }
+
 .nav,
 .nav li {
   display: inline-block; }

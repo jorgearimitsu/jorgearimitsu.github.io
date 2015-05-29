@@ -20,6 +20,7 @@
 // --------------------------------------------------
 //
 // ------------------- Components -------------------
+//     - section logo
 //     - section navigation
 //     - section social
 //        - social link
@@ -31,6 +32,7 @@
 //     - section img preview
 //     - section avatar
 // --------------------------------------------------
+
 
 
 
@@ -114,13 +116,30 @@ ul { list-style-type: none; }
 
 
 
+// ---------- section logo ----------
+.logo {
+  img {
+    max: {
+      height: 32px;
+      width: 220px;
+    }
+    width: 100%;
+  }
+
+  //hiding text
+  span { display: none; }
+}
+// ---------- section end ----------
+
+
+
 // ---------- section navigation ----------
 .nav,
 .nav li { display: inline-block; }
 
 .nav li {
   a { text-decoration: none; } 
-  
+
   &:not(:last-of-type) { margin-right: 20px; }
 }
 // ---------- section end ----------
