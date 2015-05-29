@@ -10,11 +10,12 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 300; }
 
-p {
-  font-size: 1.125em; }
-
 h2 {
   font-weight: 400; }
+
+p {
+  font-size: 1.125em;
+  line-height: 1.5555555556; }
 
 a {
   color: #666; }
@@ -24,37 +25,65 @@ a {
     color: #6cf;
     transition: color .5s; }
 
-header[role="banner"] {
-  padding: 20px 0; }
-  header[role="banner"] h1 img {
-    max-width: 177px;
-    max-height: 32px;
-    width: 100%; }
-  header[role="banner"] h1 span {
-    display: none; }
+ul {
+  list-style-type: none; }
 
-.header-links {
-  margin-bottom: 20px;
-  text-align: center; }
-  .header-links a {
-    font-size: .875em;
-    text-decoration: none; }
-    .header-links a i {
-      font-size: 1.2857142857em;
-      margin-right: 10px; }
+.nav li {
+  display: inline-block; }
+  .nav li:not(:last-of-type) {
+    margin-right: 20px; }
+.nav a {
+  text-decoration: none; }
 
-.social-links {
-  float: right; }
-  .social-links li {
-    display: inline-block; }
-    .social-links li a {
-      position: relative; }
-      .social-links li a i {
-        font-size: 1.7142857143em; }
-      .social-links li a span {
-        position: absolute;
-        left: -9999em; }
+.social-link {
+  font-size: 1.5em;
+  line-height: 1;
+  position: relative; }
+  .social-link span {
+    position: absolute;
+    left: -999em; }
 
-.header-links a:not(:last-of-type),
-.social-links li:not(:last-of-type) {
-  margin-right: 20px; }
+.social-button {
+  border: 1px solid #fff;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.25em;
+  padding: 20px; }
+  .social-button i[class*="fa"] {
+    font-size: 1.5em;
+    margin-right: 10px;
+    vertical-align: middle; }
+  .social-button:hover {
+    border-color: #356;
+    color: #356;
+    transition-property: color, border-color;
+    transition-duration: 1s; }
+
+.divisor {
+  border-color: #666; }
+
+.divisor-left {
+  border-left-width: 2px;
+  border-left-style: solid;
+  margin-left: 20px;
+  padding-left: 20px; }
+
+.section-heading {
+  line-height: 1; }
+  .section-heading hr {
+    background-color: #666;
+    border: none;
+    height: 2px;
+    width: 45px;
+    margin: 10px 0 0; }
+
+.img-preview {
+  max-height: 291px;
+  max-width: 282px;
+  width: 100%; }
+
+.avatar {
+  border-radius: 50%;
+  max-height: 217px;
+  max-width: 217px;
+  width: 100%; }

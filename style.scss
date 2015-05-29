@@ -3,32 +3,53 @@
 // @version 1.0
 // @author Jorge Arimitsu
 // ==================================================
-// Table of contents
-// ==================================================
-//   - @section variables
+
 // --------------------------------------------------
-//   - @section reset
+// --------------- Table of contents ----------------
 // --------------------------------------------------
-//   - @section typography
+//
+// -------------------- Globals ---------------------
+//    - section colors
+//    - section reset
+//    - section typography
+//        - font set
+//        - headings
+//        - paragraphs
+//     - section links
+//     - section lists
 // --------------------------------------------------
-//   - @section navigation
-// --------------------------------------------------
-//   - @section header
+//
+// ------------------- Components -------------------
+//     - section navigation
+//     - section social
+//        - social link
+//        - social button
+//     - section divisor
+//        - divisor
+//        - divisor left
+//     - section section-heading
+//     - section img preview
+//     - section avatar
 // --------------------------------------------------
 
 
+
+
 // --------------------------------------------------
-// @section variables
+// -------------------- Globals ---------------------
 // --------------------------------------------------
 
-//colors
+
+
+// ---------- section colors ----------
 $gray: #666;
 $blue_sky: #6cf;
-// --------------------------------------------------
+$dark_blue: #356;
+// ---------- section end ----------
 
-// --------------------------------------------------
-// @section reset
-// --------------------------------------------------
+
+
+// ---------- section reset ----------
 *,
 *:before,
 *:after {
@@ -36,29 +57,37 @@ $blue_sky: #6cf;
   margin: 0;
   padding: 0;
 }
-// --------------------------------------------------
+// ---------- section end ----------
 
 
-// --------------------------------------------------
-// @section typography
-// --------------------------------------------------
 
-// default font set
+// ---------- section typography ----------
+
+
+// font set
 body {
   color: $gray;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
 }
+// end
 
-p { font-size: 1.125em; }
 
+// headings
 h2 { font-weight: 400; }
-// --------------------------------------------------
+// end
 
 
-// --------------------------------------------------
-// @section navigation
-// --------------------------------------------------
+// paragraphs
+p { 
+  font-size: 1.125em; // 18px / 16px
+  line-height: 1.5555555556; // 28px / 18px
+}
+// ---------- section end ----------
+
+
+
+// ---------- section links ----------
 a {
   color: $gray;
 
@@ -69,64 +98,138 @@ a {
     transition: color .5s;
   }
 }
+// ---------- section end ----------
+
+
+
+// ---------- section lists ----------
+ul { list-style-type: none; }
+// ---------- section end ----------
+
+
+
+// --------------------------------------------------
+// ------------------ Components --------------------
 // --------------------------------------------------
 
 
-// --------------------------------------------------
-// @section header
-// --------------------------------------------------
-header[role="banner"] {
-  padding: 20px 0;
 
-  h1 {
-    img {
-      max-width: 177px;
-      max-height: 32px;
-      width: 100%;
-    }
-    
-    // hiding logo text
-    span { display: none; }
+// ---------- section navigation ----------
+.nav {
+  li { 
+    display: inline-block; 
+
+    &:not(:last-of-type) { margin-right: 20px; }
+  }
+  
+  a { text-decoration: none; } 
+}
+// ---------- section end ----------
+
+
+
+// ---------- section social ----------
+
+// social link
+.social-link { 
+  font-size: 1.5em; 
+  line-height: 1;
+  position: relative;
+  
+  //hiding text in social link
+  span {
+    position: absolute;
+    left: -999em;
   }
 }
+// end
 
-.header-links {
-  margin-bottom: 20px;
-  text-align: center;
 
-  a {
-    font-size: .875em; // 14px / 16px
-    text-decoration: none;
-    
-    i {
-      font-size: 1.2857142857em; // 18px / 14px
-      margin-right: 10px;
+// social button
+.social-button {
+  border: 1px solid #fff;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.25em; // 20px / 16px
+  padding: 20px;
+
+
+  i[class*="fa"] {
+    font-size: 1.5em; // 30px / 20px
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  &:hover {
+    border-color: $dark_blue;
+    color: $dark_blue;
+    transition: {
+      property: color, border-color;
+      duration: 1s;
     }
   }
 }
+// ---------- section end ----------
 
-.social-links {
-  float: right;
 
-  li {
-    display: inline-block;
 
-    a {
-      position: relative;
+// ---------- section divisor ----------
 
-    i { font-size: 1.7142857143em; } // 24px / 14px 
 
-      //hiding links texts
-      span {
-        position: absolute;
-        left: -9999em;
-      }
-    }
+// divisor
+.divisor { 
+  border-color: $gray;
+}
+
+
+// divisor left
+.divisor-left { 
+  border-left: {
+    width: 2px;
+    style: solid;   
+  }
+  margin-left: 20px;
+  padding-left: 20px;
+}
+// ---------- section end ----------
+
+
+
+// ---------- section section-heading ----------
+.section-heading {
+  line-height: 1;
+
+  hr {
+    background-color: $gray;
+    border: none;
+    height: 2px;
+    width: 45px;
+    margin: 10px 0 0;
   }
 }
+// ---------- section end ----------
 
-.header-links a,
-.social-links li {
-  &:not(:last-of-type) { margin-right: 20px; }
+
+
+// ---------- section img preview ----------
+.img-preview {
+  max: {
+    height: 291px;
+    width: 282px;
+  }
+  width: 100%;
 }
-// --------------------------------------------------
+// ---------- section end ----------
+
+
+
+// ---------- section avatar ----------
+.avatar {
+  border-radius: 50%;
+  max: {
+    height: 217px;
+    width: 217px;
+  }
+  width: 100%;
+}
+// ---------- section end ----------
