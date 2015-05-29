@@ -28,6 +28,9 @@ a {
 ul {
   list-style-type: none; }
 
+.fl-r {
+  float: right; }
+
 .logo img {
   max-height: 32px;
   max-width: 220px;
