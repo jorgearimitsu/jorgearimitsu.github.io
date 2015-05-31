@@ -69,7 +69,7 @@
 .nav li { display: inline-block; }
 
 .nav li {
-  a { text-decoration: none; } 
+  a { text-decoration: none; }
 
   &:not(:last-of-type) { margin-right: 20px; }
 }
@@ -86,11 +86,11 @@
 
 // <<< social link >>>
 
-.social-link { 
-  font-size: 1.5em; 
+.social-link {
+  font-size: 1.5em;
   line-height: 1;
   position: relative;
-  
+
   //hiding text in social link
   span {
     position: absolute;
@@ -149,10 +149,10 @@
 
   // <<< divisor left >>>
 
-  .divisor-left { 
+  .divisor-left {
     border-left: {
       width: 2px;
-      style: solid;   
+      style: solid;
     }
     margin-left: 20px;
     padding-left: 20px;
