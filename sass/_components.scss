@@ -1,0 +1,224 @@
+// --------------- Table of contents ----------------
+//  components
+//  |----- section helpers
+//  |      |----- float right
+//  |----- section logo
+//  |----- section navigation
+//  |----- section social
+//  |      |----- social-link
+//  |      |----- social-button
+//  |----- section divisor
+//  |      |----- divisor
+//  |      |----- divisor-left
+//  |----- section section-heading
+//  |----- section img-preview
+//  |----- section avatar
+// --------------------------------------------------
+
+
+
+
+
+// ---------- section helpers ----------
+
+
+// <<< float right >>>
+
+.fl-r { float: right; }
+
+// <<< end  >>>
+
+
+// ---------- section end ----------
+
+
+
+
+
+// ---------- section logo ----------
+
+
+.logo {
+  img {
+    max: {
+      height: 32px;
+      width: 220px;
+    }
+    width: 100%;
+  }
+
+  //hiding text
+  span { display: none; }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+}
+
+
+// ---------- section end ----------
+
+
+
+
+
+// ---------- section navigation ----------
+
+
+.nav,
+.nav li { display: inline-block; }
+
+.nav li {
+  a { text-decoration: none; } 
+
+  &:not(:last-of-type) { margin-right: 20px; }
+}
+
+
+// ---------- section end ----------
+
+
+
+
+
+// ---------- section social ----------
+
+
+// <<< social link >>>
+
+.social-link { 
+  font-size: 1.5em; 
+  line-height: 1;
+  position: relative;
+  
+  //hiding text in social link
+  span {
+    position: absolute;
+    left: -999em;
+  }
+}
+
+// <<< end >>>
+
+
+
+// <<< social button >>>
+.social-button {
+  border: 1px solid #fff;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.25em; // 20px / 16px
+  padding: 20px;
+
+
+  i[class*="fa"] {
+    font-size: 1.5em; // 30px / 20px
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  &:hover {
+    border-color: $dark_blue;
+    color: $dark_blue;
+    transition: {
+      property: color, border-color;
+      duration: 1s;
+    }
+  }
+}
+// <<< end >>>
+
+
+// ---------- section end ----------
+
+
+
+
+
+// ---------- section divisor ----------
+
+
+@media screen and (min-width: 768px) {
+  // <<< divisor >>>
+
+  .divisor { border-color: $gray; }
+
+  // <<< end >>>
+
+
+
+  // <<< divisor left >>>
+
+  .divisor-left { 
+    border-left: {
+      width: 2px;
+      style: solid;   
+    }
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+
+  // <<< end >>>
+}
+
+
+// ---------- section end ----------
+
+
+
+
+
+// ---------- section section-heading ----------
+
+
+.section-heading {
+  line-height: 1;
+
+  hr {
+    background-color: $gray;
+    border: none;
+    height: 2px;
+    width: 45px;
+    margin: 10px 0 0;
+  }
+}
+
+
+// ---------- section end ----------
+
+
+
+
+
+// ---------- section img-preview ----------
+
+
+.img-preview {
+  max: {
+    height: 291px;
+    width: 282px;
+  }
+  width: 100%;
+}
+
+
+// ---------- section end ----------
+
+
+
+
+
+// ---------- section avatar ----------
+
+
+.avatar {
+  border-radius: 50%;
+  max: {
+    height: 217px;
+    width: 217px;
+  }
+  width: 100%;
+}
+
+
+// ---------- section end ----------
