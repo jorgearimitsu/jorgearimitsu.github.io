@@ -2,6 +2,8 @@
 //  components
 //  |----- section helpers
 //  |      |----- float right
+//  |      |----- sm helper
+//  |             |----- text-align-sm-r
 //  |----- section logo
 //  |----- section navigation
 //  |----- section icons
@@ -36,6 +38,21 @@
 .fl-r { float: right; }
 
 // <<< end  >>>
+
+
+
+// <<< sm helpers >>>
+
+@media screen and (min-width: 768px) {
+
+  // <<< text-align-sm-r >>
+
+  .text-align-sm-r { text-align: right; }
+
+  // <<< end >>>
+}
+
+// <<< end >>>
 
 
 // ---------- section end ----------
