@@ -106,6 +106,7 @@ ul {
     margin: 10px 0 0; }
 
 .img-preview {
+  margin: 0 auto;
   overflow: hidden;
   position: relative; }
   .img-preview:hover .img-preview-hover {
