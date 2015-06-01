@@ -193,3 +193,9 @@ header[role="banner"] {
         margin-top: 40px; }
       #about li:not(:last-of-type) {
         margin-bottom: 20px; } }
+
+footer[role="contentinfo"] {
+  background-color: #333;
+  height: 50px;
+  line-height: 50px;
+  text-align: center; }

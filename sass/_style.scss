@@ -3,6 +3,7 @@
 //  |----- section main header
 //  |----- section freebies
 //  |----- section about
+//  |----- section main footer
 // --------------------------------------------------
 
 
@@ -52,6 +53,20 @@ header[role="banner"] { padding: 20px 0; }
     // margin for social buttons
     li:not(:last-of-type) { margin-bottom: 20px; }
   }
+}
+
+// ---------- section end ----------
+
+
+
+
+// ---------- section main footer ----------
+
+footer[role="contentinfo"] {
+  background-color: $carbon;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
 }
 
 // ---------- section end ----------
