@@ -232,7 +232,10 @@
 
 // ---------- section section-text ----------
 
-.section-text { margin: 40px 0; }
+.section-text {
+  line-height: 1.5555555556; // 28px / 18px
+  margin: 40px 0;
+}
 
 // ---------- section end ----------
 

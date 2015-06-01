@@ -14,8 +14,7 @@ h2 {
   font-weight: 400; }
 
 p {
-  font-size: 1.125em;
-  line-height: 1.5555555556; }
+  font-size: 1.125em; }
 
 a {
   color: #666; }
@@ -110,6 +109,7 @@ article {
     margin: 10px 0 0; }
 
 .section-text {
+  line-height: 1.5555555556;
   margin: 40px 0; }
 
 .img-preview {
