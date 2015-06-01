@@ -93,6 +93,8 @@ a {
 
   &:active { color: inherit; }
 
+  &:visited { color: #fff; }
+
   &:hover {
     color: $blue_sky;
     transition: color .5s;
