@@ -33,15 +33,18 @@ article {
 .fl-r {
   float: right; }
 
-.logo img {
-  max-height: 32px;
-  max-width: 220px;
-  width: 100%; }
-.logo span {
-  display: none; }
-@media screen and (max-width: 767px) {
-  .logo {
-    margin-bottom: 20px; } }
+.logo {
+  display: inline-block;
+  line-height: 0; }
+  .logo img {
+    max-height: 32px;
+    max-width: 220px;
+    width: 100%; }
+  .logo span {
+    display: none; }
+  @media screen and (max-width: 767px) {
+    .logo {
+      margin-bottom: 20px; } }
 
 .nav,
 .nav li {
