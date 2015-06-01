@@ -8,6 +8,7 @@
 //  |      |----- paragraphs
 //  |----- section links
 //  |----- section lists
+//  |----- section articles
 // --------------------------------------------------
 
 
@@ -111,5 +112,14 @@ a {
 
 ul { list-style-type: none; }
 
+
+// ---------- section end ----------
+
+
+
+
+// ---------- section articles ----------
+
+article { padding: 80px 0; }
 
 // ---------- section end ----------
