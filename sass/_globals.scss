@@ -91,9 +91,7 @@ p {
 a {
   color: $gray;
 
-  &:active { color: inherit; }
-
-  &:visited { color: #fff; }
+  &:visited { color: inherit; }
 
   &:hover {
     color: $blue_sky;
