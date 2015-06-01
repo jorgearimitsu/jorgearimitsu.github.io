@@ -28,6 +28,9 @@ a {
 ul {
   list-style-type: none; }
 
+article {
+  padding: 80px 0; }
+
 .fl-r {
   float: right; }
 
@@ -167,3 +170,8 @@ ul {
 
 header[role="banner"] {
   padding: 20px 0; }
+
+#freebies p {
+  margin: 40px 0; }
+#freebies .img-preview:not(:last-of-type) {
+  margin-bottom: 40px; }

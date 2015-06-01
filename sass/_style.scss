@@ -1,6 +1,7 @@
 // --------------- Table of contents ----------------
 //  style
 //  |----- section main header
+//  |----- section freebies
 // --------------------------------------------------
 
 
@@ -13,4 +14,15 @@
 header[role="banner"] { padding: 20px 0; }
 
 
+// ---------- section end ----------
+
+
+
+
+// ---------- section freebies ----------
+#freebies {
+  p { margin: 40px 0; }
+
+  .img-preview:not(:last-of-type) { margin-bottom: 40px; }
+}
 // ---------- section end ----------
