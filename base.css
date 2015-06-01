@@ -145,7 +145,8 @@ ul {
   .preview-links li:not(:last-of-type) {
     margin-bottom: 15px; }
   .preview-links i {
-    margin-right: 10px; }
+    margin-right: 10px;
+    vertical-align: middle; }
 
 .img-preview,
 .img-preview-hover {
