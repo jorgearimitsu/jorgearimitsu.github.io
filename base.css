@@ -176,3 +176,12 @@ header[role="banner"] {
 
 #freebies .img-preview:not(:last-of-type) {
   margin-bottom: 40px; }
+
+#about {
+  background-color: #6cf;
+  color: #fff;
+  text-align: center; }
+  #about hr {
+    background-color: #fff; }
+  #about li:not(:last-of-type) {
+    margin-bottom: 20px; }

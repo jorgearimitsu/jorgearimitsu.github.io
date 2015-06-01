@@ -24,3 +24,20 @@ header[role="banner"] { padding: 20px 0; }
 #freebies .img-preview:not(:last-of-type) { margin-bottom: 40px; }
 
 // ---------- section end ----------
+
+
+
+
+
+// ---------- section about ----------
+#about {
+  background-color: $blue_sky;
+  color: #fff;
+  text-align: center;
+
+  //section-heading hr color
+  hr { background-color: #fff; }
+
+  li:not(:last-of-type) { margin-bottom: 20px; }
+}
+// ---------- section end ----------
