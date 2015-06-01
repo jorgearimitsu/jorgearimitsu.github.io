@@ -19,7 +19,7 @@ p {
 
 a {
   color: #666; }
-  a:active {
+  a:visited {
     color: inherit; }
   a:hover {
     color: #6cf;
@@ -53,6 +53,7 @@ ul {
 .radial-icon {
   background-color: rgba(51, 51, 51, 0.8);
   border-radius: 50%;
+  display: inline-block;
   height: 55px;
   line-height: 55px;
   text-align: center;
@@ -105,9 +106,56 @@ ul {
     margin: 10px 0 0; }
 
 .img-preview {
-  max-height: 291px;
-  max-width: 282px;
-  width: 100%; }
+  overflow: hidden;
+  position: relative; }
+  .img-preview:hover .img-preview-hover {
+    opacity: 1; }
+  .img-preview:hover .preview-icon,
+  .img-preview:hover .preview-links {
+    transform: translateY(0); }
+  .img-preview:hover img {
+    transform: scale(1.1); }
+
+.img-preview-hover {
+  background-color: rgba(51, 51, 51, 0.5);
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity .4s ease-in-out; }
+
+.preview-content {
+  bottom: 0;
+  height: 177px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center; }
+
+.preview-icon {
+  margin-bottom: 20px;
+  transform: translateY(-150px); }
+
+.preview-links {
+  color: #fff;
+  font-size: 1.125em;
+  transform: translateY(150px); }
+  .preview-links li:not(:last-of-type) {
+    margin-bottom: 15px; }
+  .preview-links i {
+    margin-right: 10px; }
+
+.img-preview,
+.img-preview-hover {
+  height: 291px;
+  width: 282px; }
+
+.img-preview img,
+.preview-icon,
+.preview-links {
+  transition: transform .4s ease-in-out; }
 
 .avatar {
   border-radius: 50%;

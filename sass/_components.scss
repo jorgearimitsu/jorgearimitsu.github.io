@@ -14,6 +14,12 @@
 //  |      |----- divisor-left
 //  |----- section section-heading
 //  |----- section img-preview
+//  |      |----- img-preview
+//  |      |----- img-preview-hover
+//  |      |----- preview-content
+//  |      |----- preview-icon
+//  |      |----- preview-links
+//  |      |----- common styles
 //  |----- section avatar
 // --------------------------------------------------
 
@@ -91,6 +97,7 @@
 .radial-icon {
   background-color: rgba(51, 51, 51, 0.8);
   border-radius: 50%;
+  display: inline-block;
   height: 55px;
   line-height: 55px;
   text-align: center;
@@ -224,13 +231,100 @@
 // ---------- section img-preview ----------
 
 
+// <<< img-preview >>>
+
 .img-preview {
-  max: {
-    height: 291px;
-    width: 282px;
+  overflow: hidden;
+  position: relative;
+
+  // hover efects
+  &:hover {
+    .img-preview-hover { opacity: 1; }
+
+    .preview-icon,
+    .preview-links { transform: translateY(0); }
+
+    img {
+      transform: scale(1.1);
+    }
   }
-  width: 100%;
 }
+
+// <<< end >>>
+
+
+
+// <<< img-preview-hover >>>
+
+.img-preview-hover {
+  background-color: rgba(51, 51, 51, 0.5);
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity .4s ease-in-out;
+}
+
+// <<< end >>>
+
+
+// <<< preview-content >>>
+
+.preview-content {
+  bottom: 0;
+  height: 177px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+}
+
+// <<< end >>>
+
+
+
+// <<< preview-icon >>>
+
+.preview-icon {
+  margin-bottom: 20px;
+  transform: translateY(-150px);
+}
+
+// <<< end >>>
+
+
+
+// <<< preview-links >>>
+
+.preview-links {
+  color: #fff;
+  font-size: 1.125em;
+  transform: translateY(150px);
+
+  li:not(:last-of-type) { margin-bottom: 15px; }
+
+  i { margin-right: 10px; }
+}
+
+// <<< end >>>
+
+
+
+// <<< common styles >>>
+
+.img-preview,
+.img-preview-hover {
+  height: 291px;
+  width: 282px;
+}
+
+.img-preview img,
+.preview-icon,
+.preview-links { transition: transform .4s ease-in-out; }
+
+// <<< end >>>
 
 
 // ---------- section end ----------
