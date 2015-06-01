@@ -13,6 +13,7 @@
 //  |      |----- divisor
 //  |      |----- divisor-left
 //  |----- section section-heading
+//  |----- section section-text
 //  |----- section img-preview
 //  |      |----- img-preview
 //  |      |----- img-preview-hover
@@ -221,6 +222,16 @@
   }
 }
 
+
+// ---------- section end ----------
+
+
+
+
+
+// ---------- section section-text ----------
+
+.section-text { margin: 40px 0; }
 
 // ---------- section end ----------
 
