@@ -4,6 +4,8 @@
 //  |      |----- float right
 //  |----- section logo
 //  |----- section navigation
+//  |----- section icons
+//  |      |----- radial-icon
 //  |----- section social
 //  |      |----- social-link
 //  |      |----- social-button
@@ -73,6 +75,35 @@
 
   &:not(:last-of-type) { margin-right: 20px; }
 }
+
+
+// ---------- section end ----------
+
+
+
+
+
+// ---------- section icons ----------
+
+
+// <<< radial-icon >>>
+
+.radial-icon {
+  background-color: rgba(51, 51, 51, 0.8);
+  border-radius: 50%;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  width: 55px;
+
+  i {
+    color: #fff;
+    font-size: 1.875em;
+    vertical-align: middle;
+  }
+}
+
+// <<< end >>>
 
 
 // ---------- section end ----------
