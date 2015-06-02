@@ -47,6 +47,7 @@ header[role="banner"] { padding: 20px 0; }
 
 // ---------- section about ----------
 
+
 #about {
   background-color: $blue_sky;
   color: #fff;
@@ -79,11 +80,12 @@ header[role="banner"] { padding: 20px 0; }
     li { display: inline-block; }
   }
 
-  // adjusting social-button margins
   @media screen and ( min-width: 992px) {
+    // adjusting social-button margins
     li:not(:last-of-type) { margin-right: 20px; }
   }
 }
+
 
 // ---------- section end ----------
 
@@ -92,11 +94,13 @@ header[role="banner"] { padding: 20px 0; }
 
 // ---------- section main footer ----------
 
+
 footer[role="contentinfo"] {
   background-color: $carbon;
   height: 50px;
   line-height: 50px;
   text-align: center;
 }
+
 
 // ---------- section end ----------
