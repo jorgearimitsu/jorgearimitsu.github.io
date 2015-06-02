@@ -57,8 +57,11 @@ header[role="banner"] { padding: 20px 0; }
   .section-heading,
   .section-text { text-align: left; }
 
-  // margin for avatar
-  .avatar { margin-top: 40px; }
+  // display and margin for avatar
+  .avatar {
+    display: none;
+    margin-top: 80px;
+  }
 
   @media screen and (max-width: 768px) {
     // align center avatar and social buttons
@@ -68,8 +71,11 @@ header[role="banner"] { padding: 20px 0; }
     li:not(:last-of-type) { margin-bottom: 20px; }
   }
 
-  // adjusting social-button display
   @media screen and (min-width: 768px) {
+    // display for avatar
+    .avatar { display: inline-block; }
+
+    // adjusting social-button display
     li { display: inline-block; }
   }
 
