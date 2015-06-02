@@ -204,6 +204,12 @@ header[role="banner"] {
       text-align: center; }
       #about li:not(:last-of-type) {
         margin-bottom: 20px; } }
+  @media screen and (min-width: 768px) {
+    #about li {
+      display: inline-block; } }
+  @media screen and (min-width: 992px) {
+    #about li:not(:last-of-type) {
+      margin-right: 20px; } }
 
 footer[role="contentinfo"] {
   background-color: #333;

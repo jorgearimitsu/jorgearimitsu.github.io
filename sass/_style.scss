@@ -67,6 +67,16 @@ header[role="banner"] { padding: 20px 0; }
     // margin for social buttons
     li:not(:last-of-type) { margin-bottom: 20px; }
   }
+
+  // adjusting social-button display
+  @media screen and (min-width: 768px) {
+    li { display: inline-block; }
+  }
+
+  // adjusting social-button margins
+  @media screen and ( min-width: 992px) {
+    li:not(:last-of-type) { margin-right: 20px; }
+  }
 }
 
 // ---------- section end ----------
