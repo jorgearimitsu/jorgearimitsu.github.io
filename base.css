@@ -132,7 +132,7 @@ article {
     transform: scale(1.1); }
 
 .img-preview-hover {
-  background-color: rgba(51, 51, 51, 0.5);
+  background-color: rgba(51, 51, 51, 0.6);
   left: 0;
   opacity: 0;
   position: absolute;
@@ -153,11 +153,14 @@ article {
   transform: translateY(-150px); }
 
 .preview-links {
-  color: #fff;
   font-size: 1.125em;
   transform: translateY(150px); }
   .preview-links li:not(:last-of-type) {
     margin-bottom: 15px; }
+  .preview-links a {
+    text-decoration: none; }
+  .preview-links a, .preview-links i {
+    color: #fff; }
   .preview-links i {
     margin-right: 10px;
     vertical-align: middle; }
