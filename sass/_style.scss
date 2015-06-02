@@ -21,9 +21,23 @@ header[role="banner"] { padding: 20px 0; }
 
 
 
+
 // ---------- section freebies ----------
 
-#freebies .img-preview:not(:last-of-type) { margin-bottom: 40px; }
+
+#freebies {
+
+  // adjusting margins between columns
+  @media screen and (max-width: 1200px) {
+    [class*="col-"]:not(:last-child) { margin-bottom: 40px; }
+  }
+
+  @media screen and (min-width: 768px) {
+    [class*="col-"]:nth-last-child(2),
+    [class*="col-"]:last-child { margin-bottom: 0; }
+  }
+}
+
 
 // ---------- section end ----------
 

@@ -181,8 +181,13 @@ article {
 header[role="banner"] {
   padding: 20px 0; }
 
-#freebies .img-preview:not(:last-of-type) {
-  margin-bottom: 40px; }
+@media screen and (max-width: 1200px) {
+  #freebies [class*="col-"]:not(:last-child) {
+    margin-bottom: 40px; } }
+@media screen and (min-width: 768px) {
+  #freebies [class*="col-"]:nth-last-child(2),
+  #freebies [class*="col-"]:last-child {
+    margin-bottom: 0; } }
 
 #about {
   background-color: #6cf;
