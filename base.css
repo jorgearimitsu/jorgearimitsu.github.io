@@ -197,11 +197,11 @@ header[role="banner"] {
   #about .section-heading,
   #about .section-text {
     text-align: left; }
+  #about .avatar {
+    margin-top: 40px; }
   @media screen and (max-width: 768px) {
     #about {
       text-align: center; }
-      #about .avatar {
-        margin-top: 40px; }
       #about li:not(:last-of-type) {
         margin-bottom: 20px; } }
 

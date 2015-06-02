@@ -57,12 +57,12 @@ header[role="banner"] { padding: 20px 0; }
   .section-heading,
   .section-text { text-align: left; }
 
+  // margin for avatar
+  .avatar { margin-top: 40px; }
+
   @media screen and (max-width: 768px) {
     // align center avatar and social buttons
     text-align: center;
-
-    // margin for avatar
-    .avatar { margin-top: 40px; }
 
     // margin for social buttons
     li:not(:last-of-type) { margin-bottom: 20px; }
