@@ -272,6 +272,7 @@
   margin: 0 auto;
   overflow: hidden;
   position: relative;
+  text-align: center;
 
   // hover efects
   &:hover {
@@ -315,7 +316,6 @@
   position: absolute;
   right: 0;
   top: 0;
-  text-align: center;
 }
 
 // <<< end >>>
@@ -356,8 +356,8 @@
 
 .img-preview,
 .img-preview-hover {
-  height: 255px;
-  width: 263px;
+  height: 268px;
+  width: 255px;
 }
 
 .img-preview img,

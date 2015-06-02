@@ -121,7 +121,8 @@ article {
 .img-preview {
   margin: 0 auto;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  text-align: center; }
   .img-preview:hover .img-preview-hover {
     opacity: 1; }
   .img-preview:hover .preview-icon,
@@ -145,8 +146,7 @@ article {
   margin: auto;
   position: absolute;
   right: 0;
-  top: 0;
-  text-align: center; }
+  top: 0; }
 
 .preview-icon {
   margin-bottom: 20px;
@@ -164,8 +164,8 @@ article {
 
 .img-preview,
 .img-preview-hover {
-  height: 255px;
-  width: 263px; }
+  height: 268px;
+  width: 255px; }
 
 .img-preview img,
 .preview-icon,
