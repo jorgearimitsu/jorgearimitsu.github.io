@@ -1,5 +1,7 @@
+/* Reset */
 html, body { margin: 0; }
 
+/* Default styles */
 body {
   font-family: 'Opens Sans', sans-serif;
 }
@@ -10,6 +12,9 @@ body {
   text-align: center;
 }
 
+/* ------------------------------ */
+/* |  Hero
+/* ------------------------------ */
 .hero {
   background: url(images/hero-bg.jpg) center no-repeat;
   color: #fff;
@@ -33,6 +38,9 @@ body {
   margin: 0;
 }
 
+/* ------------------------------ */
+/* |  Services
+/* ------------------------------ */
 .services {
   background-color: #38aae0;
   padding: 48px;
@@ -79,6 +87,10 @@ body {
   font-weight: 300;
   margin-top: 12px;
 }
+
+/* ------------------------------ */
+/* |  Contact
+/* ------------------------------ */
 
 .contact {
   background-color: #333;
